@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.nick {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.follow {
+    padding: 5px 15px;
+    border: 1px solid #FE2C55;
+    color: #FE2C55;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.follow:hover {
+    background-color: #FE2C55;
+    color: #fff;
+}
+
+.video-container {
+    position: relative;
+    padding-top: 15%;
+}
+
+.actions {
+    position: absolute;
+    bottom: 100px;
+    right: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.action span {
+    font-size: 14px;
+    color: #000000;
+}
+
+.details {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+}
+
+.title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #ece7e7;
+}
+
+.music img {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .actions {
+        bottom: 80px;
+    }
+
+    .details {
+        bottom: 10px;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .name {
+    color: #ffffff;
+}
+
+body.dark-mode .nick {
+    color: #b0b0b0;
+}
+
+body.dark-mode .follow {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+body.dark-mode .follow:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.dark-mode .actions {
+    color: #ffffff;
+}
+
+body.dark-mode .action span {
+    color: #ffffff;
+}
+
+body.dark-mode .title {
+    color: lightblue;
+}
+
+body.dark-mode .music {
+    color: #ffffff;
+}
